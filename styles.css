@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+a:link{
+    color: green;
+}
+a.googl:hover{
+    color:purple;
+    font-size: 1.1em;
+}
+a.googl:active{
+    color: yellow;
+    font-size: 1.1em;
+}
+a.googl:visited{
+    color: pink;
+}
+#list li:hover{
+    color: brown;
+    font-size: 1.1em;
+}
+#list li:not(:hover){
+    color: blue;
+}
+#greeting #hello{
+    background-color: purple;
+    display: block;
+    font-size: 2em;
+    padding: 8px 15px;
+    display: none;
+    width: 100px;
+}
+
+#greeting:hover #hello{
+    display: block;
+    cursor: pointer;
+}
+#greeting:hover{
+    cursor: pointer;
+}
+#gta p{
+    color: green;
+    background-color: brown;
+    border: none;
+    box-shadow: 3px 3px 5px green,-3px -3px 5px blue;
+    padding: 5px 8px;
+    display: none;
+    width: 100px;
+}
+#gta .antonio{
+    color: black;
+    background-color: aqua;
+    width: 100px;
+    box-shadow: 5px 5px 7px black;
+    padding: 10px 16px;
+    display: none;
+}
+#gta:hover p{
+    display: block;
+}
+#gta:hover .antonio{
+    display: block;
+}
+.fruits li::marker{
+    content: "✔";
+}
+#apple::after{
+    content: "🍎";
+}
+#coconut::after{
+    content: "🥥";
+}
+#carrot::after{
+    content: "🥕";
+}
+#watermelon::after{
+    content: "🍉";
+}
+#mange::after{
+    content: "🥭";
+}
+#orange::after{
+    content: "🍊";
+}
+#one li:hover{
+    color: hsl(0, 82%, 64%);
+}
+#one li::first-line{
+    color: black;
+}
+#one li::marker{
+    color: black;
+    content: "✔";
+}
+#list li::marker{
+    content: "✔";
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+}
+.pagination a.active{
+    color: black;
+    font-weight: bold;
+    background-color: hsl(120, 76%, 48%);
+    border-radius: 7px;
+    box-shadow: 3px 2px 5px black;
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+    border-radius: 9px;
+    font-weight: bold;
+    box-shadow: 7px 7px 12px black;
+}
+.normal button{
+    padding: 10px 15px;
+    color: black;
+    background-color: grey;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+.normal a{
+    display: block;
+    padding: 10px 15px;
+    background-color: grey;
+    box-shadow: 7px 7px 15px black;
+    color: black;
+    text-decoration: none;
+}
+.normal .content{
+    position: absolute;
+    display: none;
+}
+.normal:hover .content{
+    display: block;
+}
+.normal{
+    display: inline-block;
+}
+.normal button:hover{
+    background-color: green;
+}
+.normal a:hover{
+    background-color: blue;
+}
