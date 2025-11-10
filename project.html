@@ -22,7 +22,7 @@
                 <form>
                     <fieldset>
                         <legend>personal information</legend>
-                        <label for="full-name">Name (required):</label>
+                        <label for="name">Name (required):</label>
                         <input type="text" id="name" name="name" placeholder="e.g Emmanuel stevens" required>
                         <label for="email">Email (required):</label>
                         <input type="email" name="email" id="email" placeholder="example@email.com" required>
@@ -31,7 +31,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>How would You rate this story:</legend>
-                        <select id="ratings">
+                        <label for="ratings">Rate this story</label>
+                        <select id="ratings" name="ratings">
                             <option value="poor">Poor</option>
                             <option value="good">Good</option>
                             <option value="very-good">Very Good</option>
@@ -39,13 +40,13 @@
                         </select>
                     </fieldset>
                     <label for="comments">Comments/Suggestion</label>
-                    <textarea id="comments" name="comments" cols="30" rows"10"></textarea>
+                    <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
                     <fieldset>
                         <legend>newsletter subscriptions </legend>
                         <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
                         <label for="subscribe">Newsletter subscriptions</label>
                     </fieldset>
-                    <button id="submit">Send feedback</button>
+                    <button type="submit" id="submit">Send feedback</button>
                 </form>
             </section>
         </main>
