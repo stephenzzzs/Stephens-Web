@@ -7,12 +7,51 @@
     </head>
     <body>
        <header>
+           <h1 id="top">Fall of Lucifer feedbackform</h1>
            <nav>
                <ul>
                    <li><a href="Fall of Lucifer.html">fall of lucifer</a></li>
                    <li><a href="practice file index.html">other stories</a></li>
                </ul>
            </nav>
-       </header> 
+       </header>
+        <main>
+            <section>
+                <h2>Share your thoughts</h2>
+                <p>“We’d love to hear your thoughts about the <i>Fall of Lucifer story.</i> Your feedback helps us improve future stories and enhance your reading experience.”</p>
+                <form>
+                    <fieldset>
+                        <legend>personal information</legend>
+                        <label for="full-name">Name (required):</label>
+                        <input type="text" id="name" name="name" placeholder="e.g Emmanuel stevens" required>
+                        <label for="email">Email (required):</label>
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                        <label for="age">Age (optional):</label>
+                        <input type="number" id="age" name="age" min="7" max="100">
+                    </fieldset>
+                    <fieldset>
+                        <legend>How would You rate this story:</legend>
+                        <select id="ratings">
+                            <option value="poor">Poor</option>
+                            <option value="good">Good</option>
+                            <option value="very-good">Very Good</option>
+                            <option selected value="excellent">Excellent</option>
+                        </select>
+                    </fieldset>
+                    <label for="comments">Comments/Suggestion</label>
+                    <textarea id="comments" name="comments" cols="30" rows"10"></textarea>
+                    <fieldset>
+                        <legend>newsletter subscriptions </legend>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                        <label for="subscribe">Newsletter subscriptions</label>
+                    </fieldset>
+                    <button id="submit">Send feedback</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>copyright &copy; 2025 Stephenzzz Web</p>
+            <p><a href="#top">Back to top</a></p>
+        </footer>
     </body>
 </html>
