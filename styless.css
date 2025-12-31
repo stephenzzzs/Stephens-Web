@@ -155,27 +155,55 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
-#email1 {
-    text-decoration: none;
-}
 img {
     max-width: 200px;
 }
-button {
-    margin-top: 10px;
-}
-textarea {
-    display: inline-block;
-    width: auto;
-    height: auto;
-}
-#comments1 {
-    color: brown;
-}
+
 img {
     width: 200px;
     height: 200px;
 }
 h2 {
     text-align: center;
+}
+/* MOBILE WITH SKEW */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #introduction, #creation, #rebellion, #fall, #aftermath,
+    header, footer {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* KEEP THE SKEW! */
+    #introduction:hover,
+    #creation:hover,
+    #rebellion:hover,
+    #fall:hover,
+    #aftermath:hover,
+    footer:hover,
+    header:hover {
+        transform: skewX(5deg); /* Half the skew */
+        /* Or different effect */
+        transform: rotate(1deg) scale(1.01); /* Subtle tilt */
+    }
+    
+    
+    /* Adjust font sizes for mobile */
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
 }
