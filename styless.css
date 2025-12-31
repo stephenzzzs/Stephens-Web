@@ -1,39 +1,155 @@
 body {
-    background-image: url(images/spidey.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
+    background-color: rgb(17, 10, 20);
     font-family:Georgia, 'Times New Roman', Times, serif ;
-    padding: 10px 20px 10px 20px;
-    margin: auto;
+    padding: 40px;
+    margin: 20px 200px 20px 200px;
+    text-align: center;
+    transition: background-color 3s ease;
+}
+body:hover {
+    background-color: rgb(134, 121, 121);
 }
 hr {
    color: brown;
    background-color: brown;
    line-height: 3px;
 }
-main {
+#creation {
     background-color: rosybrown;
     box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+    display: none;
 }
+#creation:hover {
+    background-color:brown;
+    transform: skewX(10deg);
+}
+#creation:target {
+    display: block;
+}
+#introduction {
+    background-color: darkseagreen;
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+    display: none;
+}
+#introduction:hover {
+    background-color: rgb(238, 142, 17);
+    color: black;
+    transform: skewX(10deg);
+}
+#introduction {
+    display: block;
+}
+#aftermath {
+    box-shadow: 2px 3px 2px black;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: midnightblue;
+    color: white;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+    display: none;
+}
+#aftermath:hover {
+    background-color: rgb(4, 69, 122);
+    color: black;
+    transform: skewX(10deg);
+}
+#aftermath:target {
+    display: block;
+}
+#rebellion {
+    background-color: rgb(158, 81, 53);
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+    display: none;
+}
+#rebellion:hover {
+    background-color: chocolate;
+    transform: skewX(10deg);
+}
+#rebellion:target {
+    display: block;
+}
+#fall{
+    background-color: rgb(61, 55, 22);
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+    display: none;
+}
+#fall:hover {
+    background-color: darkolivegreen;
+    transform: skewX(10deg);
+}
+#fall:target {
+    display: block;
+}
+    
+
 footer {
     background-color: rosybrown;
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+}
+footer:hover {
+    background-color: rgb(75, 55, 32);
+    color: black;
+    transform: skewX(10deg);
 }
 header {
-    background-color: rosybrown;
+    background-color: rgb(92, 43, 43);
+    box-shadow: 2px 3px 2px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 700px;
+    transition: background-color 1.3s ease;
+}
+header:hover {
+    background-color: rgba(13, 13, 182, 0.548);
+    color: black;
 }
 a:hover {
     font-size: 1.1em;
     font-weight: bold;
-    color: aqua;
+    color: green;
 }
 a:active {
-    font-size: 1.1em;
+    font-size: 1em;
     color: azure;
-    font-weight: bolder;
+    font-weight: bold;
 }
 a:visited {
-    color: plum;
+    color: purple;
 }
 h1 {
     text-align: center;
@@ -57,6 +173,9 @@ textarea {
     color: brown;
 }
 img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+}
+h2 {
+    text-align: center;
 }
