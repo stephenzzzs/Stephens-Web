@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>FEEDBACK FORM</title>
     <link rel="icon" type="image" href="images/favicon.png">
-    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="styles.css">
     </head>
     <body>
        <header>
@@ -19,7 +19,7 @@
         <main>
             <section>
                 <h2>Share your thoughts</h2>
-                <p>“We’d love to hear your thoughts about the <i>Fall of Lucifer story.</i> Your feedback helps us improve future stories and enhance your reading experience.”</p>
+                <p>“We'd love to hear your thoughts about the <i>Fall of Lucifer story.</i> Your feedback helps us improve future stories and enhance your reading experience.”</p>
                 <form>
                     <fieldset>
                         <legend>personal information</legend>
@@ -32,8 +32,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>How would You rate this story:</legend>
-                        <label for="ratings">Rate this story</label>
-                        <select id="ratings" name="ratings">
+                        <label for="ratings" class="rating">Rate this story</label>
+                        <select id="ratings" name="ratings" class="review">
                             <option value="poor">Poor</option>
                             <option value="good">Good</option>
                             <option value="very-good">Very Good</option>
@@ -44,8 +44,8 @@
                     <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
                     <fieldset>
                         <legend>newsletter subscriptions </legend>
-                        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-                        <label for="subscribe">Newsletter subscriptions</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" class="rating">
+                        <label for="subscribe" class="review">Newsletter subscriptions</label>
                     </fieldset>
                     <button type="submit" id="submit">Send feedback</button>
                 </form>
